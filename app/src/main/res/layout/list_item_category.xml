@@ -4,19 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:padding="30dp"
     android:orientation="vertical">
 
     <TextView
         android:id="@+id/list_item_category_id_textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textAlignment="textStart"
         tools:text="category id" />
 
     <TextView
         android:id="@+id/list_item_category_categoryname_textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textAlignment="textStart"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         tools:text="category name" />
+
+    <ImageButton
+        android:id="@+id/list_item_category_delete_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_delete"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/list_item_category_edit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="Edit Category"
+        app:srcCompat="@android:drawable/ic_menu_edit"
+        tools:ignore="SpeakableTextPresentCheck" />
 
 </LinearLayout>
